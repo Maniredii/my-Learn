@@ -130,4 +130,25 @@ try {
   e.printStackTrace();
 }`
     }
+  },
+{
+    id: 'java-week1-jvm',
+        title: 'Week 1: JVM Architecture',
+            category: 'Week 1',
+                description: 'Understanding the Java Virtual Machine (JVM), JRE, and JDK. The JVM is the engine that drives the Java code. It converts Java bytecode into machine language.',
+                    code: `// The Write Once, Run Anywhere concept
+// Source Code (.java) -> Compiler (javac) -> Bytecode (.class) -> JVM -> Machine Code
+
+public class JVMCheck {
+    public static void main(String[] args) {
+        System.out.println("Java Version: " + System.getProperty("java.version"));
+        System.out.println("JVM Vendor: " + System.getProperty("java.vm.vendor"));
+        
+        // Memory Management (Heap)
+        Runtime runtime = Runtime.getRuntime();
+        long memory = runtime.totalMemory() - runtime.freeMemory();
+        System.out.println("Used Memory: " + memory + " bytes");
+    }
+}`
+}
 ];

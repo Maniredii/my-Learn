@@ -149,14 +149,13 @@ public class JVMCheck {
         System.out.println("Used Memory: " + memory + " bytes");
     }
 }`
-    }
-  },
-{
-    id: 'java-week1-primitives',
+    },
+    {
+        id: 'java-week1-primitives',
         title: 'Week 1: Primitives vs Wrappers',
-            category: 'Week 1',
-                description: 'Java has 8 primitive data types (int, boolean, etc.) which are efficient but not objects. Wrapper classes (Integer, Boolean) allow them to be used in Collections.',
-                    code: `public class TypesCheck {
+        category: 'Week 1',
+        description: 'Java has 8 primitive data types (int, boolean, etc.) which are efficient but not objects. Wrapper classes (Integer, Boolean) allow them to be used in Collections.',
+        code: `public class TypesCheck {
     public static void main(String[] args) {
         // Primitive (Stack Memory. Fast. No nulls)
         int primitiveInt = 100;
@@ -170,14 +169,13 @@ public class JVMCheck {
         System.out.println(primitiveInt == wrapperInt); // true (Unboxing)
     }
 }`
-}
-  },
-{
-    id: 'java-week1-control-arrays',
+    },
+    {
+        id: 'java-week1-control-arrays',
         title: 'Week 1: Control Flow & Arrays',
-            category: 'Week 1',
-                description: 'Mastering loops and conditional logic. Arrays are fixed-size containers for multiple values of the same type.',
-                    code: `public class FlowControl {
+        category: 'Week 1',
+        description: 'Mastering loops and conditional logic. Arrays are fixed-size containers for multiple values of the same type.',
+        code: `public class FlowControl {
     public static void main(String[] args) {
         // Updated Switch Expression (Java 14+)
         String day = "MONDAY";
@@ -197,5 +195,5 @@ public class JVMCheck {
         }
     }
 }`
-}
+    }
 ];

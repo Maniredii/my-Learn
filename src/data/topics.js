@@ -171,4 +171,31 @@ public class JVMCheck {
     }
 }`
 }
+  },
+{
+    id: 'java-week1-control-arrays',
+        title: 'Week 1: Control Flow & Arrays',
+            category: 'Week 1',
+                description: 'Mastering loops and conditional logic. Arrays are fixed-size containers for multiple values of the same type.',
+                    code: `public class FlowControl {
+    public static void main(String[] args) {
+        // Updated Switch Expression (Java 14+)
+        String day = "MONDAY";
+        String type = switch (day) {
+            case "MONDAY", "FRIDAY" -> "Work";
+            case "SATURDAY", "SUNDAY" -> "Party";
+            default -> "Rest";
+        };
+        System.out.println(type);
+        
+        // Arrays
+        int[] nums = {10, 20, 30, 40};
+        
+        // Enhanced For Loop (ForEach)
+        for (int n : nums) {
+            if (n > 20) System.out.println(n);
+        }
+    }
+}`
+}
 ];

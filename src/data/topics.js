@@ -129,14 +129,13 @@ try {
   System.out.println("An error occurred.");
   e.printStackTrace();
 }`
-    }
-  },
-{
-    id: 'java-week1-jvm',
+    },
+    {
+        id: 'java-week1-jvm',
         title: 'Week 1: JVM Architecture',
-            category: 'Week 1',
-                description: 'Understanding the Java Virtual Machine (JVM), JRE, and JDK. The JVM is the engine that drives the Java code. It converts Java bytecode into machine language.',
-                    code: `// The Write Once, Run Anywhere concept
+        category: 'Week 1',
+        description: 'Understanding the Java Virtual Machine (JVM), JRE, and JDK. The JVM is the engine that drives the Java code. It converts Java bytecode into machine language.',
+        code: `// The Write Once, Run Anywhere concept
 // Source Code (.java) -> Compiler (javac) -> Bytecode (.class) -> JVM -> Machine Code
 
 public class JVMCheck {
@@ -148,6 +147,27 @@ public class JVMCheck {
         Runtime runtime = Runtime.getRuntime();
         long memory = runtime.totalMemory() - runtime.freeMemory();
         System.out.println("Used Memory: " + memory + " bytes");
+    }
+}`
+    }
+  },
+{
+    id: 'java-week1-primitives',
+        title: 'Week 1: Primitives vs Wrappers',
+            category: 'Week 1',
+                description: 'Java has 8 primitive data types (int, boolean, etc.) which are efficient but not objects. Wrapper classes (Integer, Boolean) allow them to be used in Collections.',
+                    code: `public class TypesCheck {
+    public static void main(String[] args) {
+        // Primitive (Stack Memory. Fast. No nulls)
+        int primitiveInt = 100;
+        
+        // Wrapper Object (Heap Memory. Slower. Allow nulls)
+        Integer wrapperInt = 100; // Autoboxing
+        Integer nullInt = null;   // Valid
+        
+        // primitiveInt = null; // COMPILER ERROR
+        
+        System.out.println(primitiveInt == wrapperInt); // true (Unboxing)
     }
 }`
 }
